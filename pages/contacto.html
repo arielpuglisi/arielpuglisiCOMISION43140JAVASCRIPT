@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagen/x-icon" href="../images/metallica.ico">
+    <title>Contacto</title>
+    <meta name="description" value="contactar a metallica">
+    <meta name="keywords" value="contacto metallica, mail metallica, datos metallica, contactar metallica">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="bg-black">
+
+    <!--Empieza barra de navegacion-->
+
+    <nav class="navbar bcolor" data-bs-theme="bcolor">
+        <section class="container">
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../index.html">Home</a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../pages/integrantes.html">Integrantes</a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../pages/historia.html">Historia</a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../pages/discografia.html">Discografia</a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../pages/merchandising.html">Merchandising</a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white" href="../pages/contacto.html">Contacto</a>
+                </div>
+            </div>
+        </section>
+    </nav>
+
+    <!--Texto antes del formulario-->
+    <main>
+        <h1 class="container text-white mt-5">
+            <span>Contactanos</span>
+            <span>para</span>
+            <span>merchandising</span>
+            <span>y</span>
+            <span>mas</span>
+            <span>información!</span>
+        </h1>
+        <h3 class="container text-white">Dejanos tus datos:</h3>
+
+        <!-- fondo animado -->
+
+        <section>
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+        </section>
+
+        <!-- Comienza formulario-->
+
+        <div class="container md-5" id="div_formulario">
+            <h1 class="text-white">Registro de usuarios:</h1>
+
+            <div id="ingresos">
+            </div>
+
+            <form class="container">
+                <input type="text" placeholder="Nombre" id="nombre" /><br><br>
+                <input type="text" placeholder="Apellido" id="apellido" /><br><br>
+                <input type="number" placeholder="Edad" id="edad" /><br><br>
+                <input type="text" placeholder="Email" id="email" /><br><br>
+                <input type="text" placeholder="Genero: H o M" id="genero" /><br><br>
+
+                <button type="button" id="botonCrear">Ingresar</button>
+                <button type="button" id="botonResetear">Resetear Formulario</button>
+            </form>
+
+            <br><br>
+
+        </div>
+        <!-- footer -->
+
+        <footer class="mixfooter bcolor mt-5">
+            <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://www.facebook.com/Metallica/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCbulh9WdLtEXiooRcYK7SWw" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/metallica/?hl=es" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:metallica@metallica.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </div>
+            <a class="text-decoration-none" href="mailto:arielpuglisi@outlook.com" target="_blank"
+                rel="noopener noreferrer">
+                <p class="text-light ">@Sitio creado por Ariel Puglisi</p>
+            </a>
+        </footer>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+          crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="../js/usuario.js"></script>
+        <script src="../js/formulario.js"></script>
+</body>
+
+</html>

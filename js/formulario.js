@@ -103,3 +103,38 @@ function resetear_form() {
   document.getElementById("genero").value = "";
   document.getElementById("email").value = "";
 }
+
+document.getElementById("guardarContacto").addEventListener("click", () => {
+  const nombre = document.getElementById("nombre").value;
+  const apellido = document.getElementById("apellido").value;
+  const email = document.getElementById("email").value;
+
+  const contacto = {
+    nombre: nombre,
+    apellido: apellido,
+    email: email,
+  };
+
+  // ajax y fetch
+
+  fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    body: JSON.stringify(contacto),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then(response => response.json())
+    .then(data => {
+      Swal.fire({
+        text: 'Información de contacto guardada con éxito',
+        icon: 'success',
+      });
+    })
+    .catch(error => {
+      Swal.fire({
+        text: 'Error al guardar la información de contacto',
+        icon: 'error',
+      });
+    });
+});
